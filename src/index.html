@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <form onchange="studentResult.value = grade(
+                parseFloat(multipleChoiceCount.value),
+                parseFloat(multipleChoicePoints.value),
+                parseFloat(shortAnswerPoints.value),
+                parseFloat(studentMultipleChoiceCorrect.value),
+                parseFloat(studentShortAnswerIncorrect.value))">
+            <label>Number of multiple choice</label>
+                <input type="number" name="multipleChoiceCount" id="multipleChoiceCount">
+            <br>
+            <label>Points per multiple choice question</label>
+            <input type="number" name="multipleChoicePoints" id="multipleChoicePoints">
+            <br>
+            <label>Total short answer points</label>
+            <input type="number" name="shortAnswerPoints" id="shortAnswerPoints">
+            <br>
+            <label>Student Multiple Choice Correct Count</label>
+            <input type="number" name="studentMultipleChoiceCorrect" id="studentMultipleChoiceCorrect">
+            <br>
+            <label>Student Short Answer Missed Points</label>
+            <input type="number" name="studentShortAnswerIncorrect" id="studentShortAnswerIncorrect">
+            <br>
+            <label>Result</label>
+            <output name="studentResult"
+            for="multipleChoiceCount multipleChoicePoints shortAnswerPoints studentMultipleChoiceCorrect studentShortAnswerIncorrect">
+
+            </output>
+        </form>
+    </body>
+</html>
